@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_event_stream
+    description: "Cleaned stream of game events from BigQuery"
+    columns:
+      - name: Player_ID
+        tests:
+          - not_null
+      - name: event_name
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Purchase', 'Tournament Joined', 'Tournament Finished', 'Tournament Reward Claimed','Tournament Room Closed']

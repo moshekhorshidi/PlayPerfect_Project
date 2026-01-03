@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data_source
+    description: "Source data for Play Perfect application imported from external CSV." 
+    database: 'clean-linker-317911' 
+    schema: PlayPerfect 
+    tables:
+      - name: play_perfect_oltp 
+        description: "Raw room data imported from external source a CSV file i got for the test."

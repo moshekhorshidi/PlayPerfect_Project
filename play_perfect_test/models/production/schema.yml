@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: player_match
+    description: "Daily player-level aggregation of monetization and engagement"
+    columns:
+      - name: Player_ID
+        tests:
+          - not_null
