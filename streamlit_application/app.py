@@ -11,7 +11,7 @@ st.set_page_config(layout="wide", page_title="Experiment Analysis")
 
 @st.cache_data
 def load_data():
-    file_path = "streamlit_application\app_data_from_big_query.csv"
+    file_path = "streamlit_application/app_data_from_big_query.csv"
     try:
         df = pd.read_csv(file_path)
         if 'DATE' in df.columns:
